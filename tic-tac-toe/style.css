@@ -1,0 +1,143 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #4a47a3;
+    color: #709fb0;
+}
+.btn-1{
+    grid-area:first1;
+}
+.btn-2{
+    grid-area:first2;
+}
+.btn-3{
+    grid-area:first3;
+}
+.btn-4{
+    grid-area:second4;
+}
+.btn-5{
+    grid-area:second5;
+}
+.btn-6{
+    grid-area:second6;
+}
+.btn-7{
+    grid-area:third7;
+}
+.btn-8{
+    grid-area:third8;
+}
+.btn-9{
+    grid-area:third9;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 280px;
+    height: 280px;
+    margin: 30px auto;
+    grid-template:
+      'first1 first2 first3'
+      'second4 second5 second6'
+      'third7 third8 third9';
+    grid-gap: 10px;
+  
+  }
+  .btn{
+      width: 80px;
+      height: 80px;
+      background-color: #a7c5eb;
+      cursor:pointer;
+      font-size: 30px;
+      transition: 800ms;
+      color:#4a47a3;
+      outline: none;
+      border:1px solid #413c69;
+  }
+  .btn:hover{
+      background-color:#709fb0;
+      box-shadow:1px 1px 5px 2px #4a47a3 inset;
+      border-radius: 5px;
+
+  }
+  h1{
+      text-align:center;
+      margin-top:40px;
+      font-size: 35px;
+
+  }
+ h2,.restart{
+     text-align:center;
+     line-height: 1.5;
+ }
+
+ .alert{
+     width: 40%;
+     height: 45px;
+     border-radius: 10px;
+     background: #b11616;
+     text-align: center;
+     font-size: 22px;
+     color: #fff;
+     line-height: 50px;
+     visibility: hidden;
+     margin-bottom: 5px;
+     
+    }
+.restart{
+    padding:5px 15px;
+    outline:none;
+    border:1px solid #4a47a3;
+    transition: 800ms;
+    cursor:pointer;
+    font-size: 26px;
+    font-weight: 600;
+    box-shadow:1px 1px 5px 2px #709fb0 inset;
+    border-radius: 5px;
+    
+}
+
+.restart:hover{
+    background-color:#709fb0;
+    color:#4a47a3;
+    animation: wiggle 4s  infinite;
+}
+
+
+@keyframes wiggle {
+	5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}

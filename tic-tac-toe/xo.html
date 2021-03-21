@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <h1>TIC-TAC-TOE</h1>
+    <div class="container">
+    <button onclick="choose(0,0,0)" class="btn btn-1"></button>
+    <button onclick="choose(0,1,1)" class="btn btn-2"></button>
+    <button onclick="choose(0,2,2)" class="btn btn-3"></button>
+    <button onclick="choose(1,0,3)" class="btn btn-4"></button>
+    <button onclick="choose(1,1,4)" class="btn btn-5"></button>
+    <button onclick="choose(1,2,5)" class="btn btn-6"></button>
+    <button onclick="choose(2,0,6)" class="btn btn-7"></button>
+    <button onclick="choose(2,1,7)" class="btn btn-8"></button>
+    <button onclick="choose(2,2,8)" class="btn btn-9"></button>
+    </div>
+    
+    <h2>Game Status</h2>
+    <div class="alert"></div>
+    <button onclick="document.location.reload(true);" class="restart">Restart Game</button> 
+   
+    <script src="./main.js"></script>
+</body>
+</html>
